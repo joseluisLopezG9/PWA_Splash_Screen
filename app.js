@@ -1,10 +1,10 @@
 // Cuando el contenido de la página esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
-  // Mostrar la pantalla de splash durante 3 segundos
+  // Mostrar la pantalla de splash durante 1 segundo
   setTimeout(function() {
     document.getElementById('splash-screen').style.display = 'none';
     document.getElementById('home-screen').style.display = 'block';
-  }, 1000); // Muestra la pantalla de inicio después de 3 segundos
+  }, 1000); // Muestra la pantalla de inicio después de 1 segundo
 });
 
 if ('serviceWorker' in navigator) {
