@@ -9,6 +9,9 @@
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
   <title>PWA Screen Splash & Home</title>
+
+
+  <link rel="manifest" href="./manifest.json">
  
 
   <!-- Otros encabezados de seguridad -->
@@ -139,7 +142,63 @@
       </div>
 
 
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <!--proper js-->
+      <script src="js/popper.min.js"></script>
+      <!--bootstrap js-->
+      <script src="js/bootstrap.min.js"></script>
+      <!--magnic popup js-->
+      <script src="js/magnific-popup.min.js"></script>
+      <!--owl carousel js-->
+      <script src="js/owl.carousel.min.js"></script>
+      <!--scrollIt js-->
+      <script src="js/scrollIt.min.js"></script>
+      <!--validator js-->
+      <script src="js/validator.min.js"></script>
+      <!--contact js-->
+      <script src="js/contact.js"></script>
+      <!--main js-->
+      <script src="js/custom.js"></script>
+
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+      <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
 
   <script src="app.js"></script>
+
+  <script>
+
+    Command: toastr["info"]("de vuelta!", "Bievenido de vuelta")
+
+    toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "newestOnTop": false,
+    "progressBar": false,
+    "positionClass": "toast-bottom-right",
+    "preventDuplicates": false,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": "5000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+    }
+
+
+
+
+  </script>
+      
 </body>
 </html>

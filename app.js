@@ -41,7 +41,7 @@ if ('serviceWorker' in navigator) {
           // Aquí podrías enviar esta información a tu servidor si fuera necesario
         },
         function (error) {
-          alert('Error al obtener la ubicación: ' + error.message);
+          alert('Error al obtener la ubicación: conectate de nuevo a internet' + error.message);
         }
       );
     } else {
@@ -79,7 +79,7 @@ if ('serviceWorker' in navigator) {
         });
       })
       .catch(error => {
-        console.error('Error al obtener usuarios:', error);
+        console.error('Error al obtener usuarios: conectate de nuevo a internet', error);
       });
   });
  
@@ -111,7 +111,7 @@ if ('serviceWorker' in navigator) {
         bitcoinInfoElement.appendChild(infoContainer);
       })
       .catch(error => {
-        console.error('Error al obtener el precio del Bitcoin:', error);
+        console.error('Error al obtener el precio del Bitcoin, conectate de nuevo a internet:', error);
         bitcoinInfoElement.innerHTML = '<p class="error-message">No se pudo obtener el precio del Bitcoin.</p>';
       });
   });
@@ -146,7 +146,7 @@ if ('serviceWorker' in navigator) {
         sunInfo.innerHTML = sunDetails;
       })
       .catch(error => {
-        console.error('Error al obtener datos de salida y puesta del sol:', error);
+        console.error('Error al obtener datos de salida y puesta del sol: conectate de nuevo a internet', error);
         sunInfo.innerHTML = '<tr><td colspan="2">No se pudo obtener los datos de salida y puesta del sol.</td></tr>';
       });
   });
